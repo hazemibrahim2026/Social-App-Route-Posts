@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+
+@theme {
+  --color-primary: #00298d;
+  --color-secondary: #f0f2f5;
+  --font-sans: "Cairo", sans-serif;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("./fonts/Cairo-VariableFont_slnt,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+@layer components {
+  
+  .skeleton {
+    @apply bg-gray-400/50; 
+  }
+}
